@@ -7,7 +7,7 @@ function createBannerImages() {
 
   const imageWidth = 132;
   const screenWidth = window.innerWidth;
-  const numberOfImages = Math.ceil(screenWidth / (imageWidth + 24) + 3);
+  const numberOfImages = Math.ceil(screenWidth / (imageWidth + 24) + 6);
 
   for (let i = 0; i < numberOfImages; i++) {
     const img = document.createElement('img');
@@ -19,4 +19,4 @@ function createBannerImages() {
 
 createBannerImages();
 
-window.addEventListener('resize', createImages);
+window.addEventListener('resize', createBannerImages);

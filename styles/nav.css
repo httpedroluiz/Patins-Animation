@@ -1,5 +1,5 @@
 nav#nav-top {
-  max-width: 80rem;
+  max-width: 22.5rem;
   width: 100%;
   padding: 1.25rem 2rem;
   margin-inline: auto;
@@ -43,5 +43,12 @@ nav#nav-top {
     justify-content: center;
 
     border-radius: 50%;
+  }
+}
+
+@media (width >= 80em) {
+  nav#nav-top {
+    max-width: 80rem;
+    width: 100%;
   }
 }
